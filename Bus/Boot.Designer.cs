@@ -37,7 +37,7 @@
             // 
             this.label_welcome.AutoSize = true;
             this.label_welcome.Font = new System.Drawing.Font("幼圆", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label_welcome.Location = new System.Drawing.Point(103, 40);
+            this.label_welcome.Location = new System.Drawing.Point(90, 39);
             this.label_welcome.Name = "label_welcome";
             this.label_welcome.Size = new System.Drawing.Size(102, 21);
             this.label_welcome.TabIndex = 0;
@@ -46,30 +46,36 @@
             // 
             // button_user
             // 
-            this.button_user.Location = new System.Drawing.Point(89, 89);
+            this.button_user.Location = new System.Drawing.Point(85, 92);
+            this.button_user.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_user.Name = "button_user";
-            this.button_user.Size = new System.Drawing.Size(131, 37);
+            this.button_user.Size = new System.Drawing.Size(118, 36);
             this.button_user.TabIndex = 1;
             this.button_user.Text = "普通用户入口";
             this.button_user.UseVisualStyleBackColor = true;
+            this.button_user.Click += new System.EventHandler(this.User_Acess);
             // 
             // button_admin
             // 
-            this.button_admin.Location = new System.Drawing.Point(89, 138);
+            this.button_admin.Location = new System.Drawing.Point(85, 136);
+            this.button_admin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button_admin.Name = "button_admin";
-            this.button_admin.Size = new System.Drawing.Size(131, 37);
+            this.button_admin.Size = new System.Drawing.Size(118, 36);
             this.button_admin.TabIndex = 2;
             this.button_admin.Text = "管理员入口";
             this.button_admin.UseVisualStyleBackColor = true;
+            this.button_admin.Click += new System.EventHandler(this.Admin_Acess);
             // 
             // Boot
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(312, 226);
+            this.ClientSize = new System.Drawing.Size(303, 205);
             this.Controls.Add(this.button_admin);
             this.Controls.Add(this.button_user);
             this.Controls.Add(this.label_welcome);
+            this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Boot";
             this.Text = "启动";
             this.Load += new System.EventHandler(this.Boot_Load);

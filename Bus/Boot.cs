@@ -10,21 +10,26 @@ using System.Windows.Forms;
 
 namespace Bus
 {
-    public partial class UserQueryForm : Form
+    public partial class Boot : Form
     {
-        public UserQueryForm()
+        public Boot()
         {
             InitializeComponent();
         }
 
-        private void UserQueryForm_Load(object sender, EventArgs e)
+        private void Boot_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void button_Query_s2s_Click(object sender, EventArgs e)
+        private void User_Acess(object sender, EventArgs e)
         {
+            this.Close();
+        }
 
+        private void Admin_Acess(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

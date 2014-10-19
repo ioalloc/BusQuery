@@ -12,6 +12,8 @@ namespace Bus
 {
     public partial class Boot : Form
     {
+        private UserQueryForm UQF = null;
+        private AdminLogin AL = null;
         public Boot()
         {
             InitializeComponent();
@@ -24,12 +26,21 @@ namespace Bus
 
         private void User_Acess(object sender, EventArgs e)
         {
-            this.Close();
+
+            if (UQF == null)
+            {
+                UQF = new UserQueryForm();
+            }
+            UQF.Show();
         }
 
         private void Admin_Acess(object sender, EventArgs e)
         {
-            this.Close();
+            if (AL == null)
+            {
+                AL = new AdminLogin();
+            }
+            AL.Show();
         }
     }
 }

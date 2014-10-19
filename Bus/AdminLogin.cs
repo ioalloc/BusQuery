@@ -17,8 +17,15 @@ namespace Bus
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void AdminLogin_Load(object sender, EventArgs e)
         {
+            /*
+            if(textBox_username.Text.Trim() == ""
+                || string.IsNullOrEmpty(textBox_username.Text))
+            {
+                
+            }
+             * */
 
         }
     }

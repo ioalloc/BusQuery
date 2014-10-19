@@ -59,7 +59,7 @@
             // button_login
             // 
             this.button_login.Location = new System.Drawing.Point(70, 170);
-            this.button_login.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_login.Margin = new System.Windows.Forms.Padding(4);
             this.button_login.Name = "button_login";
             this.button_login.Size = new System.Drawing.Size(88, 32);
             this.button_login.TabIndex = 2;
@@ -69,16 +69,15 @@
             // textBox_username
             // 
             this.textBox_username.Location = new System.Drawing.Point(143, 57);
-            this.textBox_username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_username.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_username.Name = "textBox_username";
             this.textBox_username.Size = new System.Drawing.Size(116, 23);
             this.textBox_username.TabIndex = 3;
-            this.textBox_username.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox_password
             // 
             this.textBox_password.Location = new System.Drawing.Point(143, 104);
-            this.textBox_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox_password.Margin = new System.Windows.Forms.Padding(4);
             this.textBox_password.Name = "textBox_password";
             this.textBox_password.Size = new System.Drawing.Size(116, 23);
             this.textBox_password.TabIndex = 4;
@@ -86,7 +85,7 @@
             // button_cancel
             // 
             this.button_cancel.Location = new System.Drawing.Point(172, 170);
-            this.button_cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button_cancel.Margin = new System.Windows.Forms.Padding(4);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(88, 32);
             this.button_cancel.TabIndex = 5;
@@ -105,9 +104,10 @@
             this.Controls.Add(this.label_password);
             this.Controls.Add(this.label_username);
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AdminLogin";
             this.Text = "AdminLogin";
+            this.Load += new System.EventHandler(this.AdminLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

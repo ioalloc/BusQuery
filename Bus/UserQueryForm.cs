@@ -45,6 +45,8 @@ namespace Bus
 
         private void button_Query_s2s_Click(object sender, EventArgs e)
         {
+
+            /*
             try
             {
                 dt.Rows.Add(null,textBox_StartStation.Text,
@@ -54,6 +56,12 @@ namespace Bus
             catch (System.Exception ep)
             {
                 Console.WriteLine("Message = {0}", ep.Message);
+            }
+             * **/
+            foreach (DataRow row in dt.Rows) 
+            {
+                listView_result.Items.Add(row[0].ToString()+
+                    row[1].ToString() + row[2].ToString());
             }
         }
     }

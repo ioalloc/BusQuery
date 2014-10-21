@@ -97,7 +97,7 @@
             this.tabPage_line.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage_line.Name = "tabPage_line";
             this.tabPage_line.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage_line.Size = new System.Drawing.Size(588, 86);
+            this.tabPage_line.Size = new System.Drawing.Size(591, 86);
             this.tabPage_line.TabIndex = 1;
             this.tabPage_line.Text = "路线查询";
             this.tabPage_line.UseVisualStyleBackColor = true;
@@ -108,7 +108,7 @@
             this.tabPage_station.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage_station.Name = "tabPage_station";
             this.tabPage_station.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tabPage_station.Size = new System.Drawing.Size(588, 86);
+            this.tabPage_station.Size = new System.Drawing.Size(591, 86);
             this.tabPage_station.TabIndex = 2;
             this.tabPage_station.Text = "站点查询";
             this.tabPage_station.UseVisualStyleBackColor = true;
@@ -120,6 +120,7 @@
             this.listView_result.Size = new System.Drawing.Size(596, 367);
             this.listView_result.TabIndex = 1;
             this.listView_result.UseCompatibleStateImageBehavior = false;
+            this.listView_result.View = System.Windows.Forms.View.List;
             // 
             // UserQueryForm
             // 

@@ -36,8 +36,11 @@
             this.tabPage_line = new System.Windows.Forms.TabPage();
             this.tabPage_station = new System.Windows.Forms.TabPage();
             this.listView_result = new System.Windows.Forms.ListView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button_Query_way = new System.Windows.Forms.Button();
             this.tabControl_query_way.SuspendLayout();
             this.tabPage_station2station.SuspendLayout();
+            this.tabPage_line.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl_query_way
@@ -45,7 +48,7 @@
             this.tabControl_query_way.Controls.Add(this.tabPage_station2station);
             this.tabControl_query_way.Controls.Add(this.tabPage_line);
             this.tabControl_query_way.Controls.Add(this.tabPage_station);
-            this.tabControl_query_way.Location = new System.Drawing.Point(16, 35);
+            this.tabControl_query_way.Location = new System.Drawing.Point(16, 16);
             this.tabControl_query_way.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl_query_way.Name = "tabControl_query_way";
             this.tabControl_query_way.SelectedIndex = 0;
@@ -93,6 +96,8 @@
             // 
             // tabPage_line
             // 
+            this.tabPage_line.Controls.Add(this.button_Query_way);
+            this.tabPage_line.Controls.Add(this.textBox1);
             this.tabPage_line.Location = new System.Drawing.Point(4, 29);
             this.tabPage_line.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage_line.Name = "tabPage_line";
@@ -115,18 +120,35 @@
             // 
             // listView_result
             // 
-            this.listView_result.Location = new System.Drawing.Point(16, 158);
+            this.listView_result.Location = new System.Drawing.Point(16, 139);
             this.listView_result.Name = "listView_result";
             this.listView_result.Size = new System.Drawing.Size(596, 367);
             this.listView_result.TabIndex = 1;
             this.listView_result.UseCompatibleStateImageBehavior = false;
             this.listView_result.View = System.Windows.Forms.View.List;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(118, 32);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(209, 26);
+            this.textBox1.TabIndex = 0;
+            // 
+            // button_Query_way
+            // 
+            this.button_Query_way.Location = new System.Drawing.Point(386, 34);
+            this.button_Query_way.Name = "button_Query_way";
+            this.button_Query_way.Size = new System.Drawing.Size(75, 26);
+            this.button_Query_way.TabIndex = 1;
+            this.button_Query_way.Text = "查询";
+            this.button_Query_way.UseVisualStyleBackColor = true;
+            this.button_Query_way.Click += new System.EventHandler(this.button_Query_way_Click);
+            // 
             // UserQueryForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 537);
+            this.ClientSize = new System.Drawing.Size(628, 520);
             this.Controls.Add(this.listView_result);
             this.Controls.Add(this.tabControl_query_way);
             this.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -137,6 +159,8 @@
             this.tabControl_query_way.ResumeLayout(false);
             this.tabPage_station2station.ResumeLayout(false);
             this.tabPage_station2station.PerformLayout();
+            this.tabPage_line.ResumeLayout(false);
+            this.tabPage_line.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -151,6 +175,8 @@
         private System.Windows.Forms.TextBox textBox_EndStation;
         private System.Windows.Forms.TextBox textBox_StartStation;
         private System.Windows.Forms.ListView listView_result;
+        private System.Windows.Forms.Button button_Query_way;
+        private System.Windows.Forms.TextBox textBox1;
 
     }
 }
